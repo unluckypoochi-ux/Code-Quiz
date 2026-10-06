@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CodeQuiz – Online Quiz Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+<header><h1>Code<span>Quiz</span></h1><button class="ghost" id="theme" aria-label="Toggle theme">Theme</button></header>
+
+<section id="home">
+<h2>Pick a topic and test yourself</h2>
+<div class="topics" id="topics"></div>
+</section>
+
+<section id="quiz" class="card hide">
+<div class="bar"><i id="prog"></i></div>
+<div class="meta"><span id="count"></span><span id="liveScore"></span></div>
+<h2 id="q"></h2>
+<div id="opts"></div>
+<p class="note" id="note"></p>
+<button class="primary" id="next" disabled>Next question</button>
+</section>
+
+<section id="result" class="card hide">
+<p class="meta" id="rTopic"></p>
+<p class="score" id="rScore"></p>
+<p id="rMsg"></p>
+<ul class="review" id="review"></ul>
+<button class="primary" id="again">Choose another topic</button>
+</section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
